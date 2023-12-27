@@ -1,0 +1,553 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  background-color: #00000000;
+}
+
+/* General styles for all devices */
+.header {
+  width: 100%;
+  height: 400px;
+  background-image: url(cybersecurity-banner-desktop.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.g {
+  font-weight: 600;
+  background: linear-gradient(
+    to right,
+    #7953cd 20%,
+    #00affa 30%,
+    #0190cd 70%,
+    #764ada 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 60px;
+  color: white;
+  position: relative;
+  padding-top: 50px;
+}
+
+.heading-p {
+  font-size: 18px;
+  color: white;
+  line-height: 1.5;
+}
+
+/* Responsive styles for phones and tablets */
+
+@media only screen and (min-device-width: 220px) and (max-device-width: 580px) {
+  .header {
+    background-image: url(online-security-protection-dark-background-3d-illustration.jpg); /* Change the background image for phones */
+  }
+
+  .heading {
+    font-size: 40px;
+    padding-top: 30px;
+    color: #fff;
+  }
+
+  .heading-p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+  }
+  
+}
+
+/* Tablets (portrait and landscape) including iPad Mini */
+@media only screen and (min-device-width: 481px) /* Minimum width for iPad Mini */ and (max-device-width: 1024px) {
+  .header {
+    background-image: url(netwotk_s1\ \(1\).jpg); /* Change the background image for phones */
+  }
+
+  .heading {
+    font-size: 50px; /* Adjusted font size for tablets */
+    padding-top: 40px; /* Adjusted padding for tablets */
+  }
+
+  .heading-p {
+    font-size: 18px; /* Adjusted font size for tablets */
+  }
+}
+
+.work-culture {
+  text-align: center;
+  background-color: #000;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Animation for work-heading */
+/* Animation for work-heading */
+.work-heading {
+  font-size: 65px;
+  color: white;
+  font-weight: 400;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeInScale 1s ease-in-out forwards;
+}
+
+/* Responsive styles for smaller screens (e.g., phones) */
+@media only screen and (max-width: 480px) {
+  .work-heading {
+    font-size: 55px; /* Adjusted font size for smaller screens */
+  }
+}
+
+/* Responsive styles for tablets (including iPad Mini) */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .work-heading {
+    font-size: 50px; /* Adjusted font size for tablets */
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Animation for work-heading-content */
+/* Styles for .work-heading-content */
+.work-heading-content {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideInBounce 1s ease-out forwards;
+  background-color: #000;
+}
+
+/* Keyframes animation */
+@keyframes slideInBounce {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive styles for smaller screens (e.g., phones) */
+@media only screen and (max-width: 480px) {
+  .work-heading-content {
+    margin-top: 80px; /* Adjusted margin-top for smaller screens */
+    flex-direction: column; /* Adjusted flex-direction for smaller screens */
+    align-items: center; /* Center items for smaller screens */
+    padding-bottom: 5%;
+  }
+}
+
+/* Responsive styles for tablets (including iPad Mini) */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .work-heading-content {
+    margin-top: 120px; /* Adjusted margin-top for tablets */
+    padding-bottom: 5%;
+  }
+}
+
+/* Styles for .image3 */
+.image3 {
+  width: 75%;
+  height: auto; /* Make the height auto to maintain aspect ratio */
+  max-width: 100%; /* Ensure it doesn't exceed the container width */
+  padding-bottom: 5%;
+}
+
+/* Styles for .image */
+.image {
+  height: 450px;
+  width: 100%;
+}
+
+.image4 {
+  height: 450px;
+  width: 100%;
+}
+
+/* Responsive styles for smaller screens (e.g., phones) */
+@media only screen and (max-width: 480px) {
+  .image {
+    height: auto; /* Make the height auto to maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't exceed the container width */
+  }
+}
+
+/* Responsive styles for tablets (including iPad Mini) */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .image {
+    height: auto; /* Make the height auto to maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't exceed the container width */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .image4 {
+    margin-left: 0%;
+    height: auto; /* Make the height auto to maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't exceed the container width */
+  }
+}
+
+/* Responsive styles for tablets (including iPad Mini) */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .image4 {
+    margin-left: 0%;
+    height: auto; /* Make the height auto to maintain aspect ratio */
+    max-width: 100%; /* Ensure it doesn't exceed the container width */
+  }
+}
+
+/* Styles for .image-container */
+.image-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+
+/* Styles for .image-heading */
+.image-heading {
+  font-size: 45px; /* Increased font size for .image-heading */
+  font-weight: 600 !important;
+  color: white;
+  text-align: left;
+  font-weight: 100;
+}
+
+/* Styles for .image-content */
+.image-content {
+  display: flex;
+  color: white;
+  text-align: left;
+  margin-top: 50px;
+  line-height: 2;
+  padding-right: 10%;
+  font-weight: 300;
+  font-size: 20px;
+
+}
+
+/* Additional style for .image-content p */
+.image-content p {
+  padding-right: 5%;
+}
+
+/* Font sizes for small screens */
+@media only screen and (max-width: 480px) {
+  .image-content {
+    font-size: 16px; /* Adjusted font size for small screens */
+  }
+  .work-heading {
+    font-size: 45px;
+  }
+  .image-heading {
+    font-size: 25px;
+  }
+}
+
+/* Styles for .whyjoin */
+.whyjoin {
+  font-size: 65px;
+  color: white;
+  font-weight: 300;
+  margin: 200px;
+  margin-bottom: 0;
+  /* background-color: #04042c; */
+}
+
+/* Responsive styles for smaller screens (e.g., phones) */
+@media only screen and (max-width: 480px) {
+  .whyjoin {
+    font-size: 40px; /* Adjusted font size for smaller screens */
+    margin: 50px; /* Adjusted margin for smaller screens */
+  }
+}
+
+/* Responsive styles for tablets (including iPad Mini) */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  .whyjoin {
+    font-size: 50px; /* Adjusted font size for tablets */
+    margin: 100px; /* Adjusted margin for tablets */
+  }
+}
+
+.cy {
+  background: linear-gradient(
+    to right,
+    #7953cd 20%,
+    #00affa 30%,
+    #0190cd 70%,
+    #764ada 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Vacancy Section Styles */
+.vacancy {
+  padding-top: 50px;
+  background-color: #04042c;
+}
+
+.vacancy-heading {
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 2.5s, transform 2.5s;
+}
+
+.reveal-heading {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.vacancy-heading h2 {
+  font-size: 32px; /* Adjusted font size */
+  color: white;
+  font-weight: 600;
+}
+
+.vacancy-heading p {
+  padding-top: 15px; /* Adjusted padding */
+  font-size: 14px; /* Adjusted font size */
+  color: white;
+  font-weight: 400;
+}
+
+/* Responsive styles for tablets (including iPad Mini) */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .vacancy-heading h2 {
+    font-size: 28px; /* Adjusted font size for tablets */
+  }
+
+  .vacancy-heading p {
+    font-size: 12px; /* Adjusted font size for tablets */
+  }
+}
+
+/* Responsive styles for smaller screens (e.g., phones) */
+@media screen and (max-width: 480px) {
+  .vacancy-heading h2 {
+    font-size: 24px; /* Adjusted font size for smaller screens */
+  }
+
+  .vacancy-heading p {
+    font-size: 10px; /* Adjusted font size for smaller screens */
+    padding-top: 10px; /* Adjusted padding for smaller screens */
+  }
+}
+
+/* card styling*/
+/* Styles for .card-container */
+.card-container {
+  display: flex;
+  flex-grow: 1;
+  margin-top: 50px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Styles for .card */
+.card-container{
+  display: flex;
+  flex-grow: 1;
+  /* margin-top: 150px; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.card {
+  position: relative;
+  width: 350px;
+  height: 340px !important;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  padding: 30px 50px;
+  background: rgba(255, 255, 255, 0.282) !important;
+  cursor: pointer;
+  margin: 50px;
+}
+
+.card:hover {
+  height: 320px !important;
+}
+
+.imgbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-80px);
+  z-index: 99;
+  padding-top: 10%;
+}
+
+ .card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  margin-top: 55px ;
+  font-size: 15px !important;
+  text-align: center;
+  transform: translateY(-450px);
+  opacity: 0;
+  transition: 0.3s;
+ 
+}
+
+.card:hover > .content {
+  opacity: 1;
+  transform: translateY(-180px);
+}
+
+.content h2 {
+  font-size: 25px !important;
+  color: #fff;
+  margin-top: 50px !important;
+}
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 480px) {
+  .card {
+    width: 100%; /* Full width for smaller screens */
+  }
+
+  .imgbox {
+    transform: translateY(-20px);
+  }
+
+  .content {
+    transform: translateY(-120px); /* Adjusted translateY for smaller screens */
+    font-size: 11px;
+  }
+  .card img {
+    /* width: 50%; */
+    /* height: 100px; Adjusted height */
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  }
+  .content h2 {
+    color: #fff;
+    padding-top: 55px !important;
+    font-size: 20px !important;
+  }
+}
+
+
+@media (max-width: 408px) {
+  .content p{
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 403px) {
+  .content p{
+    font-size: 11.5px;
+  }
+}
+/* card end*/
+
+/* CSS */
+.button-36 {
+ 
+margin-left:5%;
+ margin-bottom: 3% ;
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-36:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+ 
+}
+
+@media (min-width: 768px) {
+  .button-36 {
+    padding: 0 2.6rem;
+  }
+}
+
+.button-36 a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.button-36 a:hover{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
