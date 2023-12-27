@@ -2478,6 +2478,14 @@ category_box
         height: 510px;
     }
 }
+
+@media (max-width: 1600px){
+    #video_id1{
+        width: 475px;
+        height: 457px; 
+     }
+}
+
 @media(max-width:1500px) and (min-width:1300px){
     .testimonial_section{padding:70px 0px;}
     .testimonial_div h3{margin-top:15px; font-size:16px; line-height:1.4;}

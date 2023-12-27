@@ -323,6 +323,14 @@ footer
     max-width:520px;
 }
 
+
+@media (max-width: 1600px){
+    #video_id1{
+        width: 475px;
+        height: 457px; 
+     }
+}
+
 @media (max-width: 660px) {
     #video_id1{
        width: 500px;

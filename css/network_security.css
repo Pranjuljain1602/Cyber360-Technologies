@@ -323,6 +323,13 @@ footer
     max-width:520px;
 }
 
+@media (max-width: 1600px){
+    #video_id1{
+        width: 475px;
+        height: 457px; 
+     }
+}
+
 @media (max-width: 660px) {
     #video_id1{
        width: 500px;
@@ -960,6 +967,7 @@ affordable
 .certificaton_section .container{overflow:hidden;}
 
 @media(min-width:1800px){
+    .container-1700{max-width:1700px;}
     .container-1700{max-width:1700px;}
 }
 .select_plan{background: #000000;text-decoration:none; display:block;
