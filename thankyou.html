@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #0A192F; /* Dark Blue Background Color */
+      color: #fff; /* Text Color */
+      font-family: 'Arial', sans-serif;
+    }
+
+    .card {
+      background-color: #112240; /* Darker Blue for Card */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 90%; /* Adjust the width as needed */
+      max-width: 400px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2em; /* Responsive font size */
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.2em; /* Responsive font size */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Thank You!</h1>
+    <p>Your message was sent successfully ❤️</p>
+  </div>
+
+  <script>
+    // Function to redirect after a delay
+    function redirectToIndex() {
+      window.location.href = 'index.html'; // Replace with the actual URL of your index page
+    }
+  
+    // Set a timeout to call the redirectToIndex function after 3-4 seconds (3000-4000 milliseconds)
+    setTimeout(redirectToIndex, Math.floor(Math.random() * 1000) + 3000); 
+  </script>
+
+</body>
+</html>
